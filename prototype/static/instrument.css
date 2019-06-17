@@ -1,0 +1,267 @@
+body {
+  margin:1em 5em 1em 5em;
+  font-family: sans-serif;
+}
+
+body.noserver {
+  /* background-color: #f77; */
+}
+#warning-noserver {
+  color:#900;
+  float:left;
+  font-weight: bold;
+}
+
+body > div {
+  background-color: #fff;
+}
+
+.black, body.black .note-editor.note-frame .note-editing-area .note-editable {
+  background-color: #000;
+  color:#aaa;
+}
+
+body.black .panel-default > .panel-heading {
+  background-color: #333;
+}
+
+p, li {
+  margin: 0 0 3px;
+  font-size: 0.9em;
+}
+label {
+  font-weight: normal;
+  display: inline;
+}
+label:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 1.3em;
+  margin-top:0;
+}
+
+td {
+}
+
+#progressbar {
+  list-style-type: none;
+  display:block;
+  overflow:hidden;
+  padding:0;
+}
+#progressbar li {
+  float:left;
+  border: 1px solid transparent;
+  padding: 5px;
+  text-align: center;
+}
+#progressbar li.current {
+  font-weight: bold;
+  border: 1px solid black;
+}
+#wrapper-without-log {
+  height:650px;
+  width:610px;
+  /* width:270px; */
+}
+
+#logwindow {
+  margin:0 1em 0 1em;
+  overflow:hidden;
+  padding: 1em;
+  vertical-align: top;
+}
+
+#log {
+  background-color:#eee;
+  height:15em;
+  font-size: 0.7em;
+  color:#666;
+  margin:0.5em;
+  overflow:auto
+}
+
+#log p {
+  margin:0;
+}
+
+#masterbox {
+  background-color: #eee;
+  padding:1em;
+  font-size: 0.8em;
+  line-height: 1em;
+}
+#prompt-masterswitch-wrapper, #condition-masterswitch-wrapper {
+  margin-top:5px;
+}
+
+#instruction {
+  margin-bottom:1.5em;
+}
+
+.disabled {
+  color:#999;
+}
+
+.condition-help {
+  color:red;
+}
+
+.displaynone {
+  display:none;
+}
+
+#editor-wrapper {
+  margin-top:3em;
+}
+
+#editor {
+  margin-top:3em;
+  min-height:200px;
+}
+
+.summernotecontainer {
+  margin:1em 0 3em 0;
+  /* border:1px solid gray; */
+  padding:0;
+}
+
+#myhovermenu {
+  position:absolute;
+  z-index:10000;
+  border:1px solid #fff;
+  width:30em;
+  height:4em;
+  background-color:#transparent;
+  display:none;
+}
+
+.note-editor {
+  width:100%;
+}
+
+.note-editable {
+  height: 350px;
+}
+#condition-video-popup {
+  position:absolute;
+  height:8.2em;
+  /* width:18em; */
+  border:1px solid gray;
+  /* display:none; */
+  visibility: hidden;
+  z-index:2000;
+  padding:3px white;
+  background-color: white;
+  scroll: XXX
+}
+
+#condition-video-popup img {
+  height: 8em;
+  background-color: white;
+}
+
+.tooltip {
+  display:none !important;
+}
+
+/* .note-statusbar{display:none;} */
+
+#findnreplaceToolbar {
+  font-size: 50%;
+  padding: 0 15px;
+  position:relative;
+  top:-10px;
+}
+
+#libre-findnreplace {
+  position:relative;
+  top:3px;
+  height:13px;
+}
+
+#findnreplaceToolbar .form-group {
+  margin-bottom: 0;
+}
+
+#findnreplaceToolbar .help-block {
+  margin-top:15px;
+}
+
+#findnreplaceToolbar .help-block.small {
+  font-size:185%;
+  color:black;
+}
+
+#findnreplaceToolbar {
+  font-family: sans-serif;
+}
+
+.align-left {
+  text-align: left;
+}
+.align-right {
+  text-align: right;
+}
+.align-center {
+  text-align: center;
+}
+.align-both {
+  text-align: justify;
+}
+
+.rtl {
+    direction: rtl;
+    unicode-bidi: bidi-override !important;
+    text-align: left;
+}
+.ltr {
+    direction: ltr;
+    unicode-bidi: bidi-override !important;
+}
+
+.preview {
+  background-color:#b3d8fd;
+}
+.preview-findnr {
+  border-bottom: 3px solid #fc0; text-decoration: none;
+}
+
+.mybutton {
+  height:30px;
+}
+
+.note-btn-group button {
+  height:29px;
+}
+
+.mybutton-icon {
+  width:14px;
+}
+
+#done-btn.disabled {
+  color: #999;
+}
+#answer-error-msg {
+    color:red;
+}
+
+.icon-rtl {
+}
+.icon-ltr {
+  /*
+  background-image: url("/static/img/pen-LTR-12x14.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  */
+}
+
+.icon-center {
+  content: "\f104"
+}
+
+#reset {
+  margin-left:10px;
+}
