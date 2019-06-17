@@ -8,13 +8,13 @@ var taskList = [
   { taskId: "welcome",    condition: cond},
   { taskId: "rehearse1",    condition: cond},
   { taskId: "actualstart",    condition: cond},
-  { taskId: "fixation-kublakhan",    condition: cond},
-  { taskId: "fixation-invitation",    condition: cond},
+  { taskId: "hint-poem",    condition: cond},
+  { taskId: "hint-invite",    condition: cond},
   { taskId: "unrelated1", condition: cond},
-  { taskId: "kublakhan",    condition: cond},
+  { taskId: "poem",    condition: cond},
   { taskId: "invitation40",    condition: cond},
-  { taskId: "fixation-countdown",    condition: cond},
-  { taskId: "fixation-emptylines",    condition: cond},
+  { taskId: "hint-chase",    condition: cond},
+  { taskId: "hint-emptylines",    condition: cond},
   { taskId: "unrelated2", condition: cond},
   { taskId: "chase",    condition: cond},
   { taskId: "emptylines",    condition: cond},
@@ -45,7 +45,7 @@ var prompts = {
     answerPrompt: null,
     buttonText: "OK! Let's start!"
   },
-  "kublakhan": {
+  "poem": {
     label: "Poem length problem",
     instruction: "You are participating in a poetry contest. " +
       "The rules of this contest say that <b>no poem can exceed 50 lines</b>. " +
@@ -523,7 +523,7 @@ var prompts = {
     answerPrompt: null,
     buttonText: "Done! Next task please!"
   },
-  "fixation-kublakhan": {
+  "hint-poem": {
     label: "Recipe",
     instruction: "<p>You have a nice recipe, but its <b>STEPS</b> are not numbered (1, 2, 3, ...). " +
       "How can you change the steps into a numbered list?</p>",
@@ -547,7 +547,7 @@ var prompts = {
       answerPrompt: null,
       buttonText: "Done! Next task please!"
   },
-  "fixation-invitation": {
+  "hint-invite": {
     label: "Search for typing errors",
     instruction: "<p>You have written the following text. " +
       "Before sending it, you would like to make sure that you have not misspelled ‘maintenance’ as ‘maintainance’, as you often do. " +
@@ -567,7 +567,7 @@ var prompts = {
     answerPrompt: "Did the text have the error?",
     buttonText: "Done! Next task please!"
   },
-  "fixation-countdown": {
+  "hint-chase": {
     label: "Correcting left-to-right numbers in Arabic",
     instruction: "<p>In Arabic, numbers are written from left to right, although everything else is written from right to left. " +
       "In the text below, the numbers should be reversed. How do you do that?</p>",
@@ -583,7 +583,7 @@ var prompts = {
     answerPrompt: null,
     buttonText: "Done! Next task please!"
   },
-  "fixation-emptylines": {
+  "hint-emptylines": {
     label: "Sorting a list of names",
     instruction: "<p>Here is a list of names participating in an event. How do you arrange them alphabetically?.</p>",
     content: "<p>Ashworth, Victoria</p>" +
